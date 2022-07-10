@@ -1,0 +1,20 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lato-font {
+  font-family: "Lato", sans-serif;
+}
+
+.line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+}

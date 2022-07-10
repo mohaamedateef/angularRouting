@@ -1,0 +1,12 @@
+#home {
+  background-color: #1abc9c;
+  overflow: auto;
+}
+
+img {
+  width: 15rem;
+}
+
+h1 {
+  font-size: 4rem;
+}

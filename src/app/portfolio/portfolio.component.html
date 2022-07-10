@@ -1,0 +1,145 @@
+<section id="portfolio" class="py-5">
+  <div class="container py-5">
+    <div class="row text-center dark-color">
+      <div>
+        <h2 class="text-uppercase fw-bold">portfolio</h2>
+      </div>
+      <div class="d-flex text-center justify-content-center my-3">
+        <div class="line me-3 bg-color"></div>
+        <div><i class="fa-solid fa-star fs-2"></i></div>
+        <div class="line ms-3 bg-color"></div>
+      </div>
+    </div>
+    <div class="row g-5 my-2">
+      <div class="col-md-4" (click)="open($event)">
+        <div class="product rounded-3 position-relative">
+          <img
+            src="../../assets/images/portfolio/cabin.png"
+            alt="Cabin image"
+            class="img-fluid rounded-2"
+            name="LOG CABIN"
+          />
+          <div
+            class="layer position-absolute top-0 bottom-0 end-0 start-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="open($event)">
+        <div class="product rounded-3 position-relative">
+          <img
+            src="../../assets/images/portfolio/cake.png"
+            alt="cake image"
+            class="img-fluid rounded-2"
+            name="TASTY CAKE"
+          />
+          <div
+            class="layer position-absolute top-0 bottom-0 end-0 start-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="open($event)">
+        <div class="product rounded-3 position-relative">
+          <img
+            src="../../assets/images/portfolio/circus.png"
+            alt="circus image"
+            class="img-fluid rounded-2"
+            name="CIRCUS TENT"
+          />
+          <div
+            class="layer position-absolute top-0 bottom-0 end-0 start-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="open($event)">
+        <div class="product rounded-3 position-relative">
+          <img
+            src="../../assets/images/portfolio/game.png"
+            alt="Cabin image"
+            class="img-fluid rounded-2"
+            name="CONTROLLER"
+          />
+          <div
+            class="layer position-absolute top-0 bottom-0 end-0 start-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="open($event)">
+        <div class="product rounded-3 position-relative">
+          <img
+            src="../../assets/images/portfolio/safe.png"
+            alt="safe image"
+            class="img-fluid rounded-2"
+            name="LOCKED SAFE"
+          />
+          <div
+            class="layer position-absolute top-0 bottom-0 end-0 start-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="open($event)">
+        <div class="product rounded-3 position-relative">
+          <img
+            src="../../assets/images/portfolio/submarine.png"
+            alt="submarine image"
+            class="img-fluid rounded-2"
+            name="SUBMARINE"
+          />
+          <div
+            class="layer position-absolute top-0 bottom-0 end-0 start-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="fixed-layer position-fixed top-0 bottom-0 start-0 end-0"
+    (click)="close()"
+  >
+    <div class="container">
+      <div class="row mx-auto">
+        <div
+          class="small-product my-4 p-5 text-center rounded-3 mx-auto position-relative"
+        >
+          <i
+            class="fa-solid fa-xmark position-absolute end-0 m-4 top-0 close"
+            (click)="close()"
+          ></i>
+          <div class="col-lg-10 mx-auto p-2">
+            <div>
+              <h2 class="text-uppercase fw-bold">{{ imageName }}</h2>
+            </div>
+            <div class="d-flex justify-content-center my-3">
+              <div class="line me-3 bg-color"></div>
+              <div><i class="fa-solid fa-star fs-2"></i></div>
+              <div class="line ms-3 bg-color"></div>
+            </div>
+            <div>
+              <img [src]="imageSrc" class="img-fluid rounded-2 my-4" />
+              <p class="mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Mollitia neque assumenda ipsam nihil, molestias magnam,
+                recusandae quos quis inventore quisquam velit asperiores, vitae?
+                Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              </p>
+              <button class="btn" (click)="close()">
+                <i class="fa-solid fa-xmark"></i> Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
